@@ -543,8 +543,7 @@ align-items: baseline;
 }
 
 .footer-logo {
-  display: inline-block;
-  margin-top: 101.5px;
+  display: inline-block; 
   margin-bottom: 16px;
 }
 
@@ -629,12 +628,9 @@ align-items: baseline;
     }
 
 
-
-
-
-
-
-
+.footer-form-field-wrapper {
+margin-left: 80px;
+} 
 
     .footer-form-field-title {
       margin-bottom: 16px;
@@ -648,11 +644,10 @@ align-items: baseline;
 
 .footer-form-field {
   display: flex; 
-  gap: 24px ;
-  
+  gap: 24px ; 
 }
 
-.review-form-input {
+.footer-form-input {
   width: 264px; 
   height: 40px; 
   border: 1px solid #ffffff; 
@@ -666,7 +661,7 @@ align-items: baseline;
   color: #ffffff; 
 }
 
-.review-form-input::placeholder {
+.footer-form-input::placeholder {
   color:  #ffffff; 
 }
 
@@ -692,16 +687,6 @@ align-items: baseline;
   margin-left: 16px; 
 }
 
-
-
-
-
-
-
-
-
-
- 
 
 
     /****************** BACKDROP ******************/
