@@ -66,8 +66,8 @@ class="hero-title">Effective Solutions for Your Business
         <ul class="benefit-list list">
 <li class="benefit-item">
 <div class="benefits-svg">
-    <svg class="benefits-svg-icon" width="64" height="64" aria-label="">
-    <use href="./images/icons.svg#icon-antenna">antenna</use>
+    <svg class="benefits-svg-icon" width="64" height="64" aria-label="antenna">
+    <use href="./images/icons.svg#icon-antenna"></use>
     </svg>
         </div>
     <h3 class="benefit-title">Strategy</h3>
@@ -393,7 +393,26 @@ problem to walk away with the perfect and creative solution.
     </a>
 </li>
 </ul>
-        </div>
+</div>
+
+        <div class="footer-form-field-wrapper">
+            <label class="footer-form-field-label" for="user-email-footer">Subscribe
+            </label>
+            <input class="footer-form-input"
+            id="user-email-footer" 
+            name="user-email-footer" 
+            type="email"
+            required
+            >
+            </div>
+
+            <button class="footer-form-submit-btn" type="submit">
+                Subscribe  <svg class="social-list-icon" width="24" height="24"  aria-label="">
+                    <use href="./images/icons.svg#icon-subsckribe-frame"></use>
+                </svg>
+            </button>
+            
+
 </div>   
 </footer>
 <!-- BACKDROP -->
@@ -405,7 +424,7 @@ problem to walk away with the perfect and creative solution.
     width="8" 
     height="8" 
     aria-label="close modal icon">
-        <use href="./images/icons.svg#icon-close"></use>
+        <use href="./images/icons.svg#icon-close-black"></use>
     </svg>  
 </button>
 
@@ -422,7 +441,7 @@ problem to walk away with the perfect and creative solution.
         pattern="[a-zA-Zа-яА-яіІїЇєЄґҐʼ]+"
         title="Taras"
         required
-        /> 
+        > 
        <svg class="review-form-input-icon" width="18" height="18" aria-label="icon-user">
 <use href="./images/icons.svg#icon-person-black"></use>
        </svg>
@@ -430,6 +449,8 @@ problem to walk away with the perfect and creative solution.
    </div>
    <div class="review-form-field-wrapper">
     <label class="review-form-field-label" for="user-tel">Phone</label>
+    <div class="review-form-input-wrapper">
+
     <input class="review-form-input" 
     id="user-tel" 
     name="user-tel" 
@@ -438,25 +459,34 @@ problem to walk away with the perfect and creative solution.
     title="xxx-xxx-xx-xx"
     required
     >
+    <svg class="review-form-input-icon" width="18" height="24" aria-label="icon-phone">
+        <use href="./images/icons.svg#icon-phone-black"></use>
+               </svg>
+    </div>
    </div> 
    <div class="review-form-field-wrapper">
     <label class="review-form-field-label" for="user-email">Email</label>
+    <div class="review-form-input-wrapper">
+
     <input class="review-form-input"
     id="user-email" 
     name="user-email" 
     type="email"
-    requir
+    required
     >
+    <svg class="review-form-input-icon" width="18" height="24" aria-label="icon-email">
+        <use href="./images/icons.svg#icon-email-black"></use>
+               </svg>
+    </div>
    </div> 
    <div class="review-form-field-wrapper">
-    <label class="review-form-field-label" for="">Comment</label>
+    <label class="review-form-field-label" for="user-comment">Comment</label>
     <textarea 
     class="review-form-comment"
     id="user-comment" 
     name="user-comment" 
     placeholder="Text input"
-    >
-    </textarea>
+    ></textarea>
    </div> 
 <div class="review-form-checkbox-wrapper">
 <input class="review-form-checkbox" 
@@ -467,8 +497,9 @@ value="true"
 required
 />
 <label class="review-form-checkbox-label" for="user-privacy-policy">
+    <span class="review-form-own-checkbox"></span>
     I accept the terms and conditions of the 
-    <a href="">Privacy Policy</a>
+    <a class="accent-color" href="">Privacy Policy</a>
 </label>
 </div>
 <button class="review-form-submit-btn" type="submit">

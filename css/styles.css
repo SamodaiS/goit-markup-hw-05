@@ -627,8 +627,70 @@ align-items: baseline;
     letter-spacing: 0.02em;
    color: #FFFFFF;
     }
+
+    .footer-form-field-label {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.5; 
+      letter-spacing: 0.02em;
+      color:  #FFF;
+      flex-shrink: 0;
+    }
+
+    .footer-form-input {
+      width: 264px;
+      height: 40px;
+      flex-shrink: 0;
+      border-radius: 4px;
+      border: 1px solid  #FFF;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+      background-color: transparent;
+
+padding: 8px 16px;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5; 
+letter-spacing: 0.04em;
+color: #FFF;
+}
+
+.footer-form-input::placeholder {
+  color: #FFF;
+ }
+
+ .footer-form-submit-btn {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--primari-white-color);
+    background-color: var(--lodo-accent); 
+    text-align: center;
+    border-radius: 4px;
+ }
+
+ .footer-form-submit-btn:hover, 
+ .footer-form-submit-btn:focus {
+ background-color: var(--accent-color);
+ }
+
+ .footer-form-submit-btn {
+  display: inline-flex;
+padding: 8px 24px;
+border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 16px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+justify-content: center;
+align-items: center;
+gap: 16px;
+ }
+
     /****************** BACKDROP ******************/
-   .backdrop {
+ .backdrop {
 position: fixed;
 top: 0;
 left: 0;
@@ -650,9 +712,8 @@ transition: opacity 250ms linear, visibility 250ms linear;
 }
 
   /****************** MODAL WINDOW STYLES ******************/ 
-  .modal {
+ .modal {
 width: 408px;
-min-height: 584px;
 border-radius: 4px;
 background: #FCFCFC;
 position: absolute;
@@ -670,9 +731,7 @@ padding-right: 24px;
     top: 24px;
     right: 24px;
     padding: 0;
-border-radius: 50%;
-  stroke-width: 1px;
-stroke: rgba(0, 0, 0, 0.10);
+
     line-height: 0%;
    transition: stroke 250ms linear;
    }
@@ -680,6 +739,7 @@ stroke: rgba(0, 0, 0, 0.10);
    .modal-close-btn:hover,
    .modal-close-btn:focus {
     stroke: #FFFFFF;
+    background-color: #4d5ae5;
    }
 
    .review-form-description {
@@ -719,6 +779,11 @@ stroke: rgba(0, 0, 0, 0.10);
   border: 1px solid rgba(46, 47, 66, 0.40);
   background-color: transparent;
   padding-left: 38px;
+  transition: border-color 250ms linear;
+   }
+
+   .review-form-input:focus {
+    border-color: #4D5AE5;
    }
 
    .review-form-input-icon {
@@ -726,6 +791,74 @@ stroke: rgba(0, 0, 0, 0.10);
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
+    stroke: #2E2F42;
+    transition: stroke 250ms linear;
    }
 
+   .review-form-input:focus + .review-form-input-icon  {
+   stroke: #4D5AE5;
+   }
+
+   .review-form-comment {
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16; 
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.40);
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    background-color: transparent;
+padding: 8px 16px;
+resize: none;
+transition: border-color 250ms linear;
+   }
+
+   .review-form-comment::placeholder {
+    color: rgba(46, 47, 66, 0.40);
+   }
  
+   .review-form-comment:focus {
+    border-color: #4D5AE5;
+   }
+
+   .review-form-checkbox-wrapper {
+    margin-bottom: 24px;
+   }
+
+   .review-form-checkbox-label {
+    color: #8E8F99;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16; 
+    letter-spacing: 0.04em; 
+   }
+
+   .review-form-submit-btn {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--primari-white-color);
+    background-color: var(--lodo-accent); 
+    text-align: center;
+   }
+
+   .review-form-submit-btn:hover, 
+   .review-form-submit-btn:focus {
+   background-color: var(--accent-color);
+   }
+
+   .review-form-submit-btn {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  }
+    
